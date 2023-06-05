@@ -1,0 +1,67 @@
+<!-- Form : Use - 1. For user interaction 2. To take user Input  -->
+<!-- 
+    form tag - Used to create form
+    input tag - To create input in different format (text , number , checkbox , radio button etc) 
+    label tag- To create label , for screen reader
+                It has for attribute which is compulsory
+    **Note - value of for attribute and input id should be same.
+
+    select tag - For drop down menu
+    option tag - For specifying values in drop down list
+    button tag - For creating button 
+    fieldset tag - For grouping the elements in form
+    legend tag - For giving caption to the fieldset
+    textarea - For multiline input
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+ </head>
+ <body>
+    <h2>Event Registration</h2>
+    <form action="">
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone">
+        <br>
+        <label for="occupation">Occupation: </label>
+        <select id="occupation" name="occupation">
+            <option value="other">Others</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend>Topics of Interest</legend>
+            <input type="checkbox" name="html" id="html">
+            <br>
+            <label for="html">HTML</label>
+            <br>
+            <input type="checkbox" name="css" id="css">
+            <br>
+            <label for="css">CSS</label>
+            <br>
+            <input type="checkbox" name="js" id="js">
+            <br>
+            <label for="js">Javascript</label>
+        </fieldset>
+        <br>
+        <label for="comment">Comments:</label>
+        <br>
+        <textarea name="comment" id="comment" cols="70" rows="5"></textarea>
+        <button>Register</button>
+    </form>
+
+</body>
+</html>
