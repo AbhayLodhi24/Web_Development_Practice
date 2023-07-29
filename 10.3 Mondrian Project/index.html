@@ -1,0 +1,211 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    
+  .grid-container{
+    display: grid;
+    grid-template-columns: 320px 428px;
+    grid-template-rows: 414px auto ;
+    height: 765px;
+    width: 757px;
+    gap: 9px;
+    background-color: #000;
+  }
+  .part1{
+    background-color: #E72F24;
+  }
+   .part2{
+    background-color: #F0F1EC;
+  }
+  .part3  {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .sub1{
+    flex-basis: 314px;
+    
+    background-color: #F0F1EC
+  }
+  .sub2{
+    flex-basis: 20px;
+    background-color: #F0F1EC
+  }
+  .part4{
+    display: flex;
+    gap: 9px;
+  }
+  .parent1{
+    display: grid;
+    grid-template-columns: 198px 153px;
+    grid-template-rows: 314px 20px;
+    gap: 9px;
+  }
+  .sub3{
+    grid-column-start: span 2 ;
+    background-color: #F0F1EC;
+  }
+  
+  .sub4{
+    background-color: #F9D01E;
+  }
+  .sub5{
+    background-color:  #232629;
+  }
+  .parent2{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-basis: 59px;
+  }
+  .sub6{
+    flex-basis: 130px;
+    background-color: #004592;
+  }
+  .sub7{
+    flex-basis: 200px;
+    background-color: #F0F1EC;
+  }
+  </style>
+</head>
+ <body>  -->
+  <!-- Write your HTML here -->
+<!--   
+  <center>
+  <div class="grid-container">
+    <div class="part1"></div>
+    <div class="part2"></div>
+    <div class="part3">
+      <div class="sub1">3</div>
+      <div class="sub2">4</div>
+    </div>
+    <div class="part4">
+      <div class="parent1">
+        <div class="sub3"></div>
+        <div class="sub4"></div>
+        <div class="sub5"></div>
+      </div>
+      <div class="parent2">
+        <div class="sub6"></div>
+        <div class="sub7"></div>
+      </div>
+    </div>
+  </div>
+</center>
+</body>
+
+</html> --> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+  .grid-container{
+    display: grid;
+    grid-template-columns: 320px 198px 153px 50px;
+    grid-template-rows: 414px 130px 155px 22px ;
+    height: 748px;
+    width: 748px;
+    gap: 9px;
+    background-color: #000;
+  }
+  .section1{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #E72F24;
+  }
+  .section2{
+    grid-area: 1 / 2 / 2 / 5;
+    background-color: #F0F1EC;
+  }
+  .section3{
+    grid-area: 2 / 1 / 4 / 2;
+    background-color: #F0F1EC;
+  }
+  .section4{
+    grid-area: 2 / 2 / 4 / 4;
+    background-color: #F0F1EC;
+  }
+  .section5{
+    grid-area: 2 / 4 / 3 / 5;
+    background-color: #004592;
+    
+  }
+  .section6{
+    grid-area: 4 / 1 / 5 / 2;
+    background-color: #F0F1EC;
+  }
+  .section7{
+    grid-area: 4 / 2 / 5 / 3;
+    background-color: #F9D01E;
+  }
+  .section8{
+    grid-area: 4 / 3 / 5 / 4;
+    background-color: #232629;
+  }
+  .section9{
+    grid-area: 3 / 4 / 5 / 5;
+    background-color: #F0F1EC;
+    margin-top: 1px;
+  }
+  </style>
+</head>
+<body>
+  <!-- Write your HTML here -->
+  <div class="grid-container">
+    <div class="section1"></div>
+    <div class="section2"></div>
+    <div class="section3"></div>
+    <div class="section4"></div>
+    <div class="section5"></div>
+    <div class="section6"></div>
+    <div class="section7"></div>
+    <div class="section8"></div>
+    <div class="section9"></div>
+  </div>
+</body>
+
+</html>
